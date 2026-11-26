@@ -1,0 +1,9 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.plist text
+*.dart text eol=lf
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.md text eol=lf

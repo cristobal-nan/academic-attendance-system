@@ -1,0 +1,24 @@
+# Local configuration, credentials and exports
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+*firebase-adminsdk*.json
+*service-account*.json
+*service_account*.json
+**/google-services.json
+**/GoogleService-Info.plist
+/mobile/lib/firebase_options.dart
+/mobile/firebase.json
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.bundle
+*.dpapi
+*.pdf
+.DS_Store

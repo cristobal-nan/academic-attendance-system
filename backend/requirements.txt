@@ -1,0 +1,13 @@
+fastapi[standard]
+uvicorn
+pydantic
+pydantic-core
+firebase-admin
+python-dotenv
+itsdangerous
+pytz
+googleapis-common-protos
+apscheduler
+sendgrid
+python-http-client
+certifi
