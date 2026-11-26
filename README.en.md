@@ -95,14 +95,14 @@ flowchart LR
 ## Pilot & Thesis Evaluation
 
 - **Classroom pilot:** piloted across **5 academic sections (~40 students per section)** with the thesis advisor.
-- **Documented evaluation:** the 2025 thesis covers faculty capacity modeling, a functional/security validation matrix, and synthetic load testing. Full documentation and the thesis PDF are available in the [portfolio case study](https://cristobal-nanjari.vercel.app/en/projects/udp-attendance).
+- **Documented evaluation:** the 2025 thesis covers capacity modeling for a projected population of **2,650 users** and a formal functional/non-functional validation matrix. Full documentation and the thesis PDF are available in the [portfolio case study](https://cristobal-nanjari.vercel.app/en/projects/udp-attendance).
 - **Early warnings:** computed through periodic historical snapshots against a configurable attendance threshold (not predictive modeling).
 
 ---
 
 ## Local Setup (Isolated Environment)
 
-The source code, diagrams, and screenshots can be inspected without credentials. To run each component in your own isolated environment (never pointing to institutional services), follow the component-level guides:
+The source code, diagrams, and screenshots can be inspected without credentials. Full Android/iOS/web builds and end-to-end flows were **not re-certified during this consolidation**, and the backend Python version is not pinned in `requirements.txt`. To run each component in your own isolated environment (never pointing to institutional services), follow the component-level guides:
 
 | Module | Main requirements | Detailed guide |
 | :--- | :--- | :--- |
@@ -117,5 +117,5 @@ The source code, diagrams, and screenshots can be inspected without credentials.
 ## Authorship & Licensing
 
 - **Author:** **Cristóbal Nanjarí** — [Portfolio](https://cristobal-nanjari.vercel.app/en) · [Case study](https://cristobal-nanjari.vercel.app/en/projects/udp-attendance) · [GitHub](https://github.com/cristobal-nan)
-- **Origin:** monorepo consolidation of the three independent repositories built for the thesis *Propuesta y desarrollo de sistema integral de registro de asistencia a clases en línea* (UDP, 2025).
+- **Origin:** monorepo consolidation performed in **November 2026** bringing together the three independent repositories built for the thesis *Propuesta y desarrollo de sistema integral de registro de asistencia a clases en línea* (UDP, 2025). Original Git histories are preserved privately.
 - **License:** all rights reserved by the author unless a `LICENSE` file is added to the repository (published for portfolio code review). Third-party dependencies retain their respective licenses; see the [Flutter notice](docs/notices/Flutter.txt).

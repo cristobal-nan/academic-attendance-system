@@ -32,7 +32,7 @@ sequenceDiagram
     D->>A: Envía QR escaneado (GET /validate/{token})
     A->>F: Verifica inscripción, duplicados y registra asistencia
     A-->>D: Resultado de la validación
-    A-->>E: Confirmación instantánea vía WebSocket (/ws/{uid})
+    A-->>E: Confirmación en tiempo real vía WebSocket (/ws/{uid})
 ```
 
 ---
@@ -95,14 +95,14 @@ flowchart LR
 ## Piloto y validación en la memoria
 
 - **Piloto en clases reales:** probado en **5 secciones académicas (~40 estudiantes por sección)** junto al profesor guía.
-- **Evaluación documentada:** la memoria (2025) incluye el estudio de dimensionamiento para la facultad, la matriz de validación funcional/seguridad y pruebas de carga sobre datos sintéticos. La documentación completa y el PDF de la memoria están disponibles en el [caso de estudio del portafolio](https://cristobal-nanjari.vercel.app/projects/udp-attendance).
+- **Evaluación documentada:** la memoria (2025) incluye el estudio de dimensionamiento para una población proyectada de **2.650 usuarios** y una matriz formal de validación funcional y no funcional. La documentación completa y el PDF de la memoria están disponibles en el [caso de estudio del portafolio](https://cristobal-nanjari.vercel.app/projects/udp-attendance).
 - **Alertas tempranas:** calculadas mediante cortes históricos (*snapshots*) y umbral configurable de porcentaje de asistencia (no constituyen un modelo predictivo).
 
 ---
 
 ## Ejecución local (entorno aislado)
 
-El código, los diagramas y las capturas pueden revisarse directamente sin credenciales. Para ejecutar cada componente en un entorno propio y aislado (sin apuntar a servicios institucionales), revisa las instrucciones detalladas en el README de cada carpeta:
+El código, los diagramas y las capturas pueden revisarse directamente sin credenciales. Los builds completos (Android/iOS/web) y flujos de extremo a extremo **no fueron recertificados en esta consolidación**, y la versión de Python del backend no está fijada en `requirements.txt`. Para ejecutar cada componente en un entorno propio y aislado (sin apuntar a servicios institucionales), revisa las instrucciones detalladas en el README de cada carpeta:
 
 | Módulo | Requisitos principales | Guía detallada |
 | :--- | :--- | :--- |
@@ -117,5 +117,5 @@ El código, los diagramas y las capturas pueden revisarse directamente sin crede
 ## Autoría y licencias
 
 - **Autor:** **Cristóbal Nanjarí** — [Portafolio](https://cristobal-nanjari.vercel.app/) · [Caso de estudio](https://cristobal-nanjari.vercel.app/projects/udp-attendance) · [GitHub](https://github.com/cristobal-nan)
-- **Origen:** consolidación en monorepositorio de los tres repositorios originales desarrollados para la memoria *Propuesta y desarrollo de sistema integral de registro de asistencia a clases en línea* (UDP, 2025).
+- **Origen:** consolidación en monorepositorio realizada en **noviembre de 2026** a partir de los tres repositorios originales desarrollados para la memoria *Propuesta y desarrollo de sistema integral de registro de asistencia a clases en línea* (UDP, 2025). Los historiales originales se preservan en privado.
 - **Licencia:** todos los derechos reservados por el autor mientras no se incorpore un archivo `LICENSE` en el repositorio (publicado para revisión de portafolio). Las dependencias conservan sus respectivas licencias; ver [aviso de Flutter](docs/notices/Flutter.txt).
